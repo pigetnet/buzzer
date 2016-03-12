@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -eq 1 ];then
+	buzzer_pin=$1
+else
+	buzzer_pin=13
+fi
+
+python /do/buzzer/python/tune.py 13 1000 0.1
+
